@@ -18,7 +18,9 @@ class FoodieFunViewController: UIViewController {
         backgroundImage.image = UIImage(named: "tacosbgcopy.jpg")
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-
+        
+        view.backgroundColor = .lightGray
+        viewBg.backgroundColor = .lightGray
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -27,6 +29,8 @@ class FoodieFunViewController: UIViewController {
     
     
 
+    
+    
     /*
     // MARK: - Navigation
 

@@ -38,20 +38,61 @@
             </objects>
             <point key="canvasLocation" x="3167" y="-13"/>
         </scene>
-        <!--View Controller-->
+        <!--Password View Controller-->
         <scene sceneID="rbI-Ng-GZX">
             <objects>
-                <viewController id="fr2-q0-961" sceneMemberID="viewController">
+                <viewController id="fr2-q0-961" customClass="PasswordViewController" customModule="FoodieFun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hAP-dH-aGy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FCo-Mn-7d5">
+                                <rect key="frame" x="130" y="106" width="154" height="29"/>
+                                <segments>
+                                    <segment title="Sign up"/>
+                                    <segment title="Sign In"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYx-z4-cFg">
+                                <rect key="frame" x="60" y="256" width="294" height="30"/>
+                                <state key="normal" title="Sign UP"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-ik-noO">
+                                <rect key="frame" x="26" y="162" width="362" height="64"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BK9-0R-tH0">
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqo-7f-Rem">
+                                        <rect key="frame" x="0.0" y="34" width="362" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FCo-Mn-7d5" firstAttribute="top" secondItem="hZg-Ru-TzM" secondAttribute="top" constant="18" id="0c6-2c-eW9"/>
+                            <constraint firstItem="wYx-z4-cFg" firstAttribute="top" secondItem="hvb-ik-noO" secondAttribute="bottom" constant="30" id="6xe-6m-X7v"/>
+                            <constraint firstItem="FCo-Mn-7d5" firstAttribute="leading" secondItem="hZg-Ru-TzM" secondAttribute="leading" constant="130" id="D56-Nj-gNj"/>
+                            <constraint firstItem="hvb-ik-noO" firstAttribute="top" secondItem="FCo-Mn-7d5" secondAttribute="bottom" constant="28" id="Fuf-bW-cQH"/>
+                            <constraint firstItem="wYx-z4-cFg" firstAttribute="leading" secondItem="hZg-Ru-TzM" secondAttribute="leading" constant="60" id="Lqe-Qk-ljD"/>
+                            <constraint firstItem="hZg-Ru-TzM" firstAttribute="trailing" secondItem="hvb-ik-noO" secondAttribute="trailing" constant="26" id="WQH-EY-48D"/>
+                            <constraint firstItem="hvb-ik-noO" firstAttribute="leading" secondItem="hZg-Ru-TzM" secondAttribute="leading" constant="26" id="fYH-jL-drf"/>
+                            <constraint firstItem="hZg-Ru-TzM" firstAttribute="trailing" secondItem="wYx-z4-cFg" secondAttribute="trailing" constant="60" id="h7P-WD-qww"/>
+                            <constraint firstItem="hZg-Ru-TzM" firstAttribute="trailing" secondItem="FCo-Mn-7d5" secondAttribute="trailing" constant="130" id="nSO-AO-piK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hZg-Ru-TzM"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiU-k3-umH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3816" y="180"/>
+            <point key="canvasLocation" x="3815.9420289855075" y="179.46428571428569"/>
         </scene>
         <!--Foodie Fun View Controller-->
         <scene sceneID="rPC-uA-xHQ">
@@ -172,6 +213,9 @@
                         <viewLayoutGuide key="safeArea" id="Hqz-nD-cS1"/>
                     </view>
                     <navigationItem key="navigationItem" id="bso-VI-4R7"/>
+                    <connections>
+                        <outlet property="viewBg" destination="5be-i2-9oQ" id="aB2-6b-G42"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU4-RN-Hy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,17 +9,35 @@
 import Foundation
 import UIKit
 
-//struct Foodie: Equatable, Codable {
-////    static func == (lhs: Foodie, rhs: Foodie) -> Bool {
-////        return lhs.id == rhs.id &&
-////            lhs.name == rhs.name
-////    }
-//    
-//    let name: String
-//    let image: UIImage
-////    let abilities: [Ability]
-////    let types: [Type]
-////    let sprites:
-//    
-//    
-//}
+
+struct Users: Decodable {
+    let results: [Foodie]
+    
+    enum UserKeys: String, CodingKey {
+        case results
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: UserKeys.self)
+        
+        self.results = try container.decode([Foodie].self, forKey: .results)
+    }
+}
+
+struct Foodie: Equatable, Codable {
+
+    enum Keys: String, CodingKey {
+        case name
+        case result
+        
+        //Name enum
+        enum App: String, CodingKey {
+            case SignIn
+            case RegisterUser
+        }
+    }
+    
+    let name: String
+  
+    
+}
