@@ -7,9 +7,25 @@
 //
 
 import Foundation
+import UIKit
+
+
+enum HTTPMethod: String {
+    case get = "GET"
+    case post = "POST"
+}
+
+// error tracking
+enum NetworkError: Error {
+    case noAuth
+    case badAuth
+    case otherError
+    case badData
+    case noDecode
+}
 
 // Base url
-private let baseURL = URL(string: "https://randomuser.me/api/?format=json&inc=name,email,phone,picture&results=1000")!
+private let baseURL = URL(string: "https://journal-ef55cc.firebaseio.com/")!
 
 
 class FoodieController {
@@ -52,3 +68,29 @@ class FoodieController {
     
     
 }
+
+class AboutControler {
+    let nameArray = "Enayatullah"
+    let titleArray = "Title Here"
+    var aboutDev: [AboutDev] = []
+    
+    init() {
+        loadAboutImagesFromAssets()
+    }
+    func loadAboutImagesFromAssets() {
+        for x in 1...5 {
+            let image: String = "Image\(x)"
+            guard let UIImage = UIImage(named: image) else {return}
+            let about = AboutDev(image: UIImage, devName: nameArray, devTitle: titleArray)
+            aboutDev.append(about)
+            
+        }
+    }
+    
+    
+    
+}
+
+
+
+

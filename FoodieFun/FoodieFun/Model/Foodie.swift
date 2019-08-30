@@ -41,3 +41,17 @@ struct Foodie: Equatable, Codable {
   
     
 }
+
+class AboutDev {
+    let image: UIImage
+    var devName: String
+    var devTitle: String
+    
+    init (image: UIImage, devName: String, devTitle: String){
+        self.image = image
+        self.devName = devName
+        self.devTitle = devTitle
+    }
+}
+
+

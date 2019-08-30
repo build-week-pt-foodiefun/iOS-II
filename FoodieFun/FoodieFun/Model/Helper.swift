@@ -14,6 +14,8 @@ enum Helper {
     static var lightLightGray = UIColor(red: 170.0/255.0, green: 181.0/255.0, blue: 232.0/255.0, alpha: 1.0)
     
     static var replaceLightgray = UIColor(red: 128.0/255.0, green: 116.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+    
+    static var homeColor = UIColor(red: 128.0/255.0, green: 116.0/255.0, blue: 255.0/255.0, alpha: 1.0)
         
 }
 

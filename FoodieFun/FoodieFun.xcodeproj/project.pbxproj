@@ -16,7 +16,14 @@
 		E6A948172314BF5200C5F7EE /* FoodieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A948162314BF5200C5F7EE /* FoodieController.swift */; };
 		E6A948192314C25A00C5F7EE /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A948182314C25A00C5F7EE /* PasswordField.swift */; };
 		E6A9481B2314C28D00C5F7EE /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A9481A2314C28D00C5F7EE /* PasswordViewController.swift */; };
+		E6DD60912318B1E3005C357A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD60902318B1E3005C357A /* User.swift */; };
+		E6DD60932318B3C8005C357A /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD60922318B3C8005C357A /* Bearer.swift */; };
 		E6E699FD23160FD100729353 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E699FC23160FD100729353 /* Helper.swift */; };
+		E6E699FF2316168D00729353 /* AboutUsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E699FE2316168D00729353 /* AboutUsCollectionViewController.swift */; };
+		E6F00AF2231764EB00B6ED8E /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F00AF1231764EB00B6ED8E /* AboutTableViewController.swift */; };
+		E6F00AF42317661200B6ED8E /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F00AF32317661200B6ED8E /* AboutTableViewCell.swift */; };
+		E6F00AFC231776D400B6ED8E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F00AFB231776D400B6ED8E /* CollectionViewCell.swift */; };
+		E6F00AFE231779BB00B6ED8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F00AFD231779BB00B6ED8E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +38,14 @@
 		E6A948162314BF5200C5F7EE /* FoodieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieController.swift; sourceTree = "<group>"; };
 		E6A948182314C25A00C5F7EE /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
 		E6A9481A2314C28D00C5F7EE /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		E6DD60902318B1E3005C357A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E6DD60922318B3C8005C357A /* Bearer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
 		E6E699FC23160FD100729353 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E6E699FE2316168D00729353 /* AboutUsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsCollectionViewController.swift; sourceTree = "<group>"; };
+		E6F00AF1231764EB00B6ED8E /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		E6F00AF32317661200B6ED8E /* AboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
+		E6F00AFB231776D400B6ED8E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E6F00AFD231779BB00B6ED8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,11 @@
 			children = (
 				E6664A12230E2B4700F660DC /* FoodieFunViewController.swift */,
 				E6A9481A2314C28D00C5F7EE /* PasswordViewController.swift */,
+				E6E699FE2316168D00729353 /* AboutUsCollectionViewController.swift */,
+				E6F00AF1231764EB00B6ED8E /* AboutTableViewController.swift */,
+				E6F00AF32317661200B6ED8E /* AboutTableViewCell.swift */,
+				E6F00AFB231776D400B6ED8E /* CollectionViewCell.swift */,
+				E6F00AFD231779BB00B6ED8E /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -115,6 +134,8 @@
 			children = (
 				E603CBD7230F76440058E5FA /* Foodie.swift */,
 				E6E699FC23160FD100729353 /* Helper.swift */,
+				E6DD60902318B1E3005C357A /* User.swift */,
+				E6DD60922318B3C8005C357A /* Bearer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,13 +211,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6DD60912318B1E3005C357A /* User.swift in Sources */,
 				E6664A13230E2B4700F660DC /* FoodieFunViewController.swift in Sources */,
+				E6F00AF42317661200B6ED8E /* AboutTableViewCell.swift in Sources */,
 				E6E699FD23160FD100729353 /* Helper.swift in Sources */,
 				E603CBD8230F76440058E5FA /* Foodie.swift in Sources */,
 				E66649FE230E275500F660DC /* AppDelegate.swift in Sources */,
 				E6A948192314C25A00C5F7EE /* PasswordField.swift in Sources */,
+				E6F00AFE231779BB00B6ED8E /* ViewController.swift in Sources */,
 				E6A948172314BF5200C5F7EE /* FoodieController.swift in Sources */,
+				E6E699FF2316168D00729353 /* AboutUsCollectionViewController.swift in Sources */,
+				E6DD60932318B3C8005C357A /* Bearer.swift in Sources */,
 				E6A9481B2314C28D00C5F7EE /* PasswordViewController.swift in Sources */,
+				E6F00AF2231764EB00B6ED8E /* AboutTableViewController.swift in Sources */,
+				E6F00AFC231776D400B6ED8E /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

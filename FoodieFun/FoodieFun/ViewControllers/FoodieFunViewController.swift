@@ -20,7 +20,7 @@ class FoodieFunViewController: UIViewController {
         self.view.insertSubview(backgroundImage, at: 0)
         
         view.backgroundColor = .lightGray
-        viewBg.backgroundColor = .lightGray
+//        viewBg.backgroundColor = Helper.replaceLightgray
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
